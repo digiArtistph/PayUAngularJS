@@ -1,0 +1,35 @@
+<!-- account id, account number, customer id || ng-controller="AccountSaverController" -->
+<div class="form">
+<h3>{{caption.title}}</h3>
+	<ul>
+		<li><span>{{caption.accountNumber}}:</span><input type="text" ng-model="search.accountNumber" /></li>
+		<li>
+			<span>{{caption.customerId}}:</span>
+			<select ng-model="search.customerId">
+				<option value="!!">{{caption.chooseCustomer}}</option>
+				<option ng-repeat="customer in customers" value="{{customer.customerId}}">{{customer.customerName}}</option>
+			</select>
+		</li>
+	</ul>
+	<div class="searchResults" >
+		<table>
+			<thead>
+			</thead>
+			<tbody>
+				<tr>
+					<td>{{caption.accountId}}</td>
+					<td>{{caption.accountNumber}}</td>
+					<td ng-show="false">{{caption.customerId}}</td>
+					<td>{{caption.customerId}}</td>
+				</tr>
+				<tr ng-repeat="account in accounts | filter:search">
+					<td>{{account.accountId}}</td>
+					<td>{{account.accountNumber}}</td>
+					<td ng-show="false">{{account.customerId}}</td>
+					<td>{{ showDetail(account.customerId) }}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div><br/>
+<span><a href="#/account/">{{caption.index}}</a></span>

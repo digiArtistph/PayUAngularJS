@@ -1,0 +1,6 @@
+[
+	{"accountId": 1, "accountNumber": "0001", "customerId": 1},
+	{"accountId": 2, "accountNumber": "0002", "customerId": 2},
+	{"accountId": 3, "accountNumber": "0003", "customerId": 3},
+	{"accountId": 4, "accountNumber": "0004", "customerId": 1}
+]

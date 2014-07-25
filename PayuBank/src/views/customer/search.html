@@ -1,0 +1,27 @@
+<!-- customer id, customer number, customer id || ng-controller="CustomerSaverController" -->
+<div class="form">
+<h3>{{caption.title}}</h3>
+	<ul>
+		<li><span>{{caption.customerAddress}}:</span><input type="text" ng-model="search.customerAddress" /></li>
+		<li><span>{{caption.customerPhone}}:</span><input type="text" ng-model="search.customerPhone" /></li>
+	</ul>
+	<div class="searchResults" >
+		<table>
+			<thead>
+			</thead>
+			<tbody>
+				<tr>
+					<td>{{caption.customerId}}</td>
+					<td>{{caption.customerAddress}}</td>
+					<td>{{caption.customerPhone}}</td>
+				</tr>
+				<tr ng-repeat="customer in customers | filter:search">
+					<td>{{customer.customerId}}</td>
+					<td>{{customer.customerAddress}}</td>
+					<td>{{customer.customerPhone}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div><br/>
+<span><a href="#/customer/">{{caption.index}}</a></span>

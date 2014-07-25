@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="es" ng-app="PayuBank">
+<head>
+	<title>PayU Bank</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
+	<script src="src/main.js"></script>
+	<script src="src/controllers/AccountController.js"></script>
+	<script src="src/controllers/CustomerController.js"></script>
+	<script src="src/controllers/MenuController.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div ng-include src=" 'src/views/menu/menu.html' "></div><br/>
+	<div ng-view></div>
+</body>
+</html>

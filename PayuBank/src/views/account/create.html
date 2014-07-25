@@ -1,0 +1,15 @@
+<!-- account id, account number, customer id || ng-controller="AccountSaverController" -->
+<div>
+<h3>{{caption.title}}</h3>
+	<form>
+		<div class="form submitForm">
+			<ul>
+				<li><span>{{caption.accountId}}:</span><input type="text" ng-model="accountId" disabled="disabled" /></li>
+				<li><span>{{caption.accountNumber}}:</span><input type="text" ng-model="accountNumber" /></li>
+				<li><span>{{caption.customerId}}:</span><select ng-model="customer" ng-options="customer.customerName for customer in customers" ></select></li>
+				<li><button ng-click="accountForm.submitForm()">{{caption.submit}}</button></li>
+			</ul>
+		</div>
+	</form>
+</div>
+<span><a href="#/account/">{{caption.index}}</a></span>

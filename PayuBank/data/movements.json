@@ -1,0 +1,10 @@
+[
+	{"movementId": 1, "accountId": 1, "movementType": "D", "movementDate": "2014-01-01", "movementValue": 100.00},
+	{"movementId": 2, "accountId": 1, "movementType": "D", "movementDate": "2014-01-02", "movementValue": 500.00},
+	{"movementId": 3, "accountId": 1, "movementType": "C", "movementDate": "2014-01-03", "movementValue": 150.00},
+	{"movementId": 4, "accountId": 2, "movementType": "D", "movementDate": "2014-01-01", "movementValue": 200.00},
+	{"movementId": 5, "accountId": 2, "movementType": "D", "movementDate": "2014-01-02", "movementValue": 120.00},
+	{"movementId": 6, "accountId": 3, "movementType": "D", "movementDate": "2014-01-01", "movementValue": 210.00},
+	{"movementId": 7, "accountId": 4, "movementType": "D", "movementDate": "2014-01-03", "movementValue": 300.00},
+	{"movementId": 8, "accountId": 4, "movementType": "C", "movementDate": "2014-01-05", "movementValue": 110.00}
+]

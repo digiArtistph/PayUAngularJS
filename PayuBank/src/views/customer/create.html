@@ -1,0 +1,15 @@
+<!-- customer id, customer number, customer id || ng-controller="CustomerSaverController" -->
+<div>
+<h3>{{caption.title}}</h3>
+	<form>
+		<div class="form submitForm">
+			<ul>
+				<li><span>{{caption.customerId}}:</span><input type="text" ng-model="customerId" disabled="disabled" /></li>
+				<li><span>{{caption.customerAddress}}:</span><input type="text" ng-model="customerAddress" /></li>
+				<li><span>{{caption.customerPhone}}:</span><input type="text" ng-model="customerPhone" /></li>
+				<li><button ng-click="customerForm.submitForm()">{{caption.submit}}</button></li>
+			</ul>
+		</div>
+	</form>
+</div>
+<span><a href="#/customer/">{{caption.index}}</a></span>

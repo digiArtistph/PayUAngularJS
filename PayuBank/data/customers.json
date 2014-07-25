@@ -1,0 +1,5 @@
+[
+	{"customerId": 1, "customerName": "Customer 1", "customerAddress": "Address 1", "customerPhone": "Phone 1"}, 
+	{"customerId": 2, "customerName": "Customer 2", "customerAddress": "Address 2", "customerPhone": "Phone 2"}, 
+	{"customerId": 3, "customerName": "Customer 3", "customerAddress": "Address 3", "customerPhone": "Phone 3"}
+]
